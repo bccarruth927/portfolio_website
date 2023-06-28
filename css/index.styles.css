@@ -1,0 +1,106 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+header {
+  height: 8.35%;
+  border: 1px red solid;
+}
+@media (min-width: 960px) {
+  header {
+    height: 8.8%;
+  }
+}
+header nav {
+  background: #222;
+  padding: 0 1rem;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+header .menu {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+@media (min-width: 960px) {
+  header .menu {
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: none;
+  }
+}
+header .logo {
+  font-size: 1.25rem;
+  padding: 0.5rem 10px 0.5rem 0px;
+}
+@media (min-width: 960px) {
+  header .logo {
+    order: 0;
+    flex: 1;
+  }
+}
+header .toggle {
+  order: 1;
+  font-size: 1.25rem;
+}
+@media (min-width: 960px) {
+  header .toggle {
+    display: none;
+  }
+}
+header .item {
+  padding: 10px;
+  order: 3;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+@media (min-width: 960px) {
+  header .item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+}
+header .button {
+  padding: 9px 5px;
+}
+@media (min-width: 960px) {
+  header .button {
+    order: 2;
+  }
+}
+header .button.secondary {
+  border-bottom: 1px #444 solid;
+}
+header .item:not(.button) a:hover,
+header .item a:hover::after {
+  color: #ccc;
+}
+header .item.button {
+  order: 2;
+}
+header .active .item {
+  display: block;
+}
