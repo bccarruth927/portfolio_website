@@ -1,3 +1,8 @@
+//Variables
+@primary-shade: #161616;
+@primary-neutral: #FAF8FF;
+@primary-action: #8685EF;
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
@@ -14,23 +19,36 @@ body {
     font-size: 16px;
 }
 
+//Header section styling
 header {
-    height: 8.35%;
-    border: 1px red solid;
+    //height: 8.35%;
+    //border: 1px red solid;
 
-    @media (min-width: 960px) {
-        height: 8.8%;
+    @media (min-width: 700px) {
+        height: 8.5%;
     }
 
     //Main navigation styling
+    //Tutorial for responsive navigation menu
+    //https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535
     nav {
-        background: #222;
+        background: @primary-neutral;
         padding: 0 1rem;
+        //z-index: 1;
+
+        @media (min-width: 700px) {
+            background: @primary-action;
+            color: #fff;
+        }
     }
 
     a {
-        color: white;
+        color: @primary-action;
         text-decoration: none;
+
+        @media (min-width: 700px) {
+            color: #fff;
+        }
     }
     
     .menu {
@@ -48,7 +66,7 @@ header {
         align-items: center;
 
         //Desktop styling
-        @media (min-width: 960px) {
+        @media (min-width: 700px) {
             justify-content: center;
             align-items: flex-start;
             flex-wrap: nowrap;
@@ -61,7 +79,7 @@ header {
         padding: 0.5rem 10px 0.5rem 0px;
 
         //Desktop styling
-        @media (min-width: 960px) {
+        @media (min-width: 700px) {
             order: 0;
             flex: 1;
         }
@@ -72,7 +90,7 @@ header {
         font-size: 1.25rem;
 
         //Desktop styling
-        @media (min-width: 960px) {
+        @media (min-width: 700px) {
             display: none;
         }
     }
@@ -87,7 +105,7 @@ header {
         display: none;
 
         //Desktop styling
-        @media (min-width: 960px) {
+        @media (min-width: 700px) {
             order: 1;
             position: relative;
             display: block;
@@ -99,7 +117,7 @@ header {
         padding: 9px 5px;
 
         //Desktop styling
-        @media (min-width: 960px) {
+        @media (min-width: 700px) {
             order: 2;
         }
     }
@@ -119,5 +137,162 @@ header {
 
     .active .item {
         display: block;
+    }
+}
+
+//Main section styling
+main {
+    height: 81.65%;
+    //border: 1px blue solid;
+
+    .hero-image {
+        background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("../imgs/hero_img.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        position: relative;
+        z-index: -1;
+
+        .hero-txt {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+
+            h1 {
+                .little-txt {
+                font-size: 1.5rem;
+                }
+            }
+
+            button {
+                margin: 1.5rem 0;
+                padding: 1rem;
+                font-size: 1rem;
+                font-weight: bold;
+                background-color: @primary-action;
+                color: #fff;
+                border: none;
+                border-radius: 15px;
+            }
+        }
+
+        @media(min-width: 968px) {
+            display: none;
+        }
+    }
+
+    .wrapper {
+        display: none;
+
+        @media(min-width: 968px) {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .introduction {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                background: @primary-neutral;
+
+                .container {
+                    margin: 0 5rem;
+                    padding: 7rem 9rem 7rem 1rem;
+                    background: #fff;
+                    border: 1px @primary-shade solid;
+                    border-radius: 15px;
+                    box-shadow: 10px 10px @primary-shade;
+                    //line-height: 2.5rem;
+
+                    h1 {
+                        .little-txt {
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    button {
+                        margin: 1.5rem 0;
+                        padding: 1rem;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        background-color: @primary-action;
+                        color: #fff;
+                        border: none;
+                        border-radius: 15px;
+                    }
+                }
+            }
+    
+            .profile-image {
+                width: 50%;
+                height: 100%;
+                background-image: url("../imgs/hero_img.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                //border: 1px orange solid;
+            }
+        }
+    }
+}
+
+//Footer section styling
+footer {
+    //height: 10%;
+    //border: 1px green solid;
+    background: @primary-neutral;
+    color: @primary-action;
+
+    @media (min-width: 700px) {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        background: @primary-action;
+        color: #fff;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0.75rem 0;
+        //border: 1px pink solid;
+
+        @media (min-width: 700px) {
+            width: auto;
+            padding: 1.5rem 1rem 1.5rem 0rem;
+            //border: 1px pink solid;
+        }
+
+        a {
+            padding: 0 0.5rem;
+            text-decoration: none;
+            color: @primary-action;
+
+            @media (min-width: 700px) {
+                color: #fff;
+            }
+        }
+    }
+
+    .copyright {
+        width: 100%;
+        padding: 0.75rem 0;
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 700px) {
+            width: auto;
+            padding-right: 1rem;
+            align-items: center;
+            //border: 1px pink solid;
+        }
     }
 }
