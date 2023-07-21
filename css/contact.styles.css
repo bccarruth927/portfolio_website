@@ -178,7 +178,7 @@ main .container .form form input[type=text],
 main .container .form form input[type=email],
 main .container .form form textarea {
   width: 100%;
-  line-height: 1;
+  line-height: 1.6rem;
 }
 main .container .form form input[type=submit] {
   width: 40%;
@@ -260,7 +260,7 @@ label.error {
 }
 input.valid.success-alert {
   outline: none;
-  border: none;
+  border: 1px solid #161616;
   border-radius: 4px;
   box-shadow: 0 0 10px green;
   color: green;
@@ -268,7 +268,7 @@ input.valid.success-alert {
 input.error,
 textarea.error {
   outline: none;
-  border: none;
+  border: 1px solid #161616;
   border-radius: 4px;
   box-shadow: 0 0 10px red;
   color: red;
