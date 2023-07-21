@@ -120,12 +120,12 @@ header .active .item {
 }
 main {
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 main .container {
+  margin: 3rem auto;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
@@ -202,6 +202,11 @@ main .container .form form input[type=submit] {
     justify-content: center;
     align-items: center;
     border: none;
+  }
+}
+@media (min-width: 968px) {
+  main .container {
+    margin: 5rem auto;
   }
 }
 footer {
