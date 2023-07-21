@@ -45,5 +45,8 @@ $('#contact-form').validate({
             required: 'Please let me know the subject of your message.',
             minlength: 'Please make your subject at least 3 characters.'
         },
+        message: {
+            required: 'Please leave me a message!'
+        }
     }
 });
