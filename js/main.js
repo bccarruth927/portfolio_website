@@ -1,4 +1,5 @@
 //Main JavaScript file
+//Import the validation function from form-validation
 
 $(document).ready(() => {
     //Mobile menu toggle functionality
