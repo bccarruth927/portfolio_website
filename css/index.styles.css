@@ -101,6 +101,11 @@ header .button {
 header .button.secondary {
   border-bottom: 1px #444 solid;
 }
+@media (min-width: 700px) {
+  header .button.secondary {
+    border: none;
+  }
+}
 header .item:not(.button) a:hover,
 header .item a:hover::after {
   color: #ccc;

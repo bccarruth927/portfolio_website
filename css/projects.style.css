@@ -131,7 +131,6 @@ main .wrapper .intro p {
 }
 main .wrapper .container {
   width: 100%;
-  border: 1px red solid;
 }
 main .wrapper .container #project1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../imgs/project1.jpg");

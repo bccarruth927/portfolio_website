@@ -124,6 +124,10 @@ header {
 
     .button.secondary {
         border-bottom: 1px #444 solid;
+
+        @media(min-width: 700px) {
+            border: none;
+        }
     }
 
     .item:not(.button) a:hover, .item a:hover::after {
