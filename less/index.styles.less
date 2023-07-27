@@ -3,6 +3,9 @@
 @primary-neutral: #FAF8FF;
 @primary-action: #8685EF;
 
+//Imported Adobe fonts
+@import url("https://use.typekit.net/ttp7aye.css");
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
@@ -23,6 +26,9 @@ body {
 header {
     //height: 8.35%;
     //border: 1px red solid;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 
     @media (min-width: 700px) {
         height: 8.5%;
@@ -76,7 +82,9 @@ header {
 
     .logo {
         font-size: 1.25rem;
-        padding: 0.5rem 10px 0.5rem 0px;
+        font-family: "garamond-premier-pro-caption", serif;
+        font-weight: 700;
+        font-style: normal;
 
         //Desktop styling
         @media (min-width: 700px) {
@@ -115,6 +123,7 @@ header {
 
     .button {
         padding: 9px 5px;
+        //display: none;
 
         //Desktop styling
         @media (min-width: 700px) {
@@ -124,6 +133,7 @@ header {
 
     .button.secondary {
         border-bottom: 1px #444 solid;
+        //display: none;
 
         @media(min-width: 700px) {
             border: none;
@@ -137,6 +147,7 @@ header {
     .item.button {
         //Mobile styling
         order: 2;
+        //display: none;
     }
 
     .active .item {
@@ -167,6 +178,11 @@ main {
             color: white;
 
             h1 {
+                font-family: "garamond-premier-pro-caption", serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 2rem;
+                
                 .little-txt {
                 font-size: 1.5rem;
                 }
@@ -206,8 +222,8 @@ main {
                 background: @primary-neutral;
 
                 .container {
-                    margin: 0 5rem;
-                    padding: 7rem 9rem 7rem 1rem;
+                    margin: 0 auto;
+                    padding: 1rem 2rem 1rem 1rem;
                     background: #fff;
                     border: 1px @primary-shade solid;
                     border-radius: 15px;
@@ -215,20 +231,33 @@ main {
                     //line-height: 2.5rem;
 
                     h1 {
+                        font-family: "garamond-premier-pro-caption", serif;
+                        font-weight: 700;
+                        font-style: normal;
+                        font-size: 2.5rem;
+
                         .little-txt {
                             font-size: 1.5rem;
                         }
                     }
 
                     button {
-                        margin: 1.5rem 0;
-                        padding: 1rem;
+                        width: 200px;
+                        margin: 1.5rem 1.5rem 1.5rem 0;
+                        padding: 1rem 0;
                         font-size: 1rem;
                         font-weight: bold;
                         background-color: @primary-action;
                         color: #fff;
+                        font-family: "gill-sans-nova", sans-serif;
+                        font-weight: 700;
+                        font-style: normal;
                         border: none;
-                        border-radius: 15px;
+                        //border-radius: 15px;
+                    }
+
+                    @media (min-width: 1200px) {
+                        padding: 1rem 7rem 1rem 1rem;
                     }
                 }
             }
@@ -253,6 +282,9 @@ footer {
     //border: 1px green solid;
     background: @primary-neutral;
     color: @primary-action;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 
     @media (min-width: 700px) {
         width: 100%;

@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/ttp7aye.css");
 *,
 ::before,
 ::after {
@@ -13,13 +14,18 @@ body {
   font-family: sans-serif;
   font-size: 16px;
 }
+header {
+  font-family: "gill-sans-nova", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 @media (min-width: 700px) {
   header {
     height: 8.5%;
   }
 }
 header nav {
-  background: #FAF8FF;
+  background: #8685EF;
   padding: 0 1rem;
 }
 @media (min-width: 700px) {
@@ -29,7 +35,7 @@ header nav {
   }
 }
 header a {
-  color: #8685EF;
+  color: #fff;
   text-decoration: none;
 }
 @media (min-width: 700px) {
@@ -59,6 +65,9 @@ header .menu li a {
 header .logo {
   font-size: 1.25rem;
   padding: 0.5rem 10px 0.5rem 0px;
+  font-family: "garamond-premier-pro-caption", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 @media (min-width: 700px) {
   header .logo {
@@ -126,8 +135,16 @@ main .wrapper .intro {
   padding: 2rem 1rem;
   text-align: center;
 }
+main .wrapper .intro h1 {
+  font-family: "garamond-premier-pro-caption", serif;
+  font-weight: 700;
+  font-style: normal;
+}
 main .wrapper .intro p {
   padding-top: 1rem;
+  font-family: "gill-sans-nova", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 main .wrapper .container {
   width: 100%;
@@ -178,6 +195,9 @@ main .wrapper .container .hero-txt {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   color: #fff;
   border-radius: 15px;
+  font-family: "garamond-premier-pro-caption", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 main .wrapper .container .mobile-article {
   width: 100%;
@@ -186,6 +206,9 @@ main .wrapper .container .mobile-article p {
   padding: 1rem;
   line-height: 1.6rem;
   background-color: #fff;
+  font-family: "gill-sans-nova", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 @media (min-width: 700px) {
   main .wrapper {
@@ -205,8 +228,16 @@ main .desktop-wrapper .intro {
   padding: 2rem 1rem;
   text-align: center;
 }
+main .desktop-wrapper .intro h1 {
+  font-family: "garamond-premier-pro-caption", serif;
+  font-weight: 700;
+  font-style: normal;
+}
 main .desktop-wrapper .intro p {
   padding-top: 1rem;
+  font-family: "gill-sans-nova", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 main .desktop-wrapper .desktop-container {
   margin: 2rem 0;
@@ -215,6 +246,9 @@ main .desktop-wrapper .desktop-container {
   display: flex;
   background-color: #fff;
   border-radius: 15px;
+  font-family: "gill-sans-nova", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 main .desktop-wrapper .desktop-container .left-image figure {
   width: 30%;
@@ -246,6 +280,9 @@ main .desktop-wrapper .desktop-container .desktop-article {
 main .desktop-wrapper .desktop-container .desktop-article h3 {
   width: 100%;
   padding: 1rem 0 0.5rem 1rem;
+  font-family: "garamond-premier-pro-caption", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 main .desktop-wrapper .desktop-container .desktop-article p {
   width: 100%;
@@ -260,8 +297,8 @@ main .desktop-wrapper .desktop-container .desktop-article p {
   }
 }
 footer {
-  background: #FAF8FF;
-  color: #8685EF;
+  background: #8685EF;
+  color: #FAF8FF;
 }
 @media (min-width: 700px) {
   footer {
@@ -277,6 +314,9 @@ footer .socials {
   justify-content: center;
   width: 100%;
   padding: 0.75rem 0;
+  font-family: "gill-sans-nova", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 @media (min-width: 700px) {
   footer .socials {
@@ -287,11 +327,11 @@ footer .socials {
 footer .socials a {
   padding: 0 0.5rem;
   text-decoration: none;
-  color: #8685EF;
+  color: #FAF8FF;
 }
 @media (min-width: 700px) {
   footer .socials a {
-    color: #fff;
+    color: #FAF8FF;
   }
 }
 footer .copyright {

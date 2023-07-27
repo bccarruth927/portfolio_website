@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/ttp7aye.css");
 *,
 ::before,
 ::after {
@@ -12,6 +13,11 @@ body {
   height: 100%;
   font-family: sans-serif;
   font-size: 16px;
+}
+header {
+  font-family: "gill-sans-nova", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 @media (min-width: 700px) {
   header {
@@ -58,7 +64,9 @@ header .menu li a {
 }
 header .logo {
   font-size: 1.25rem;
-  padding: 0.5rem 10px 0.5rem 0px;
+  font-family: "garamond-premier-pro-caption", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 @media (min-width: 700px) {
   header .logo {
@@ -136,6 +144,12 @@ main .hero-image .hero-txt {
   transform: translate(-50%, -50%);
   color: white;
 }
+main .hero-image .hero-txt h1 {
+  font-family: "garamond-premier-pro-caption", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+}
 main .hero-image .hero-txt h1 .little-txt {
   font-size: 1.5rem;
 }
@@ -172,25 +186,34 @@ main .wrapper {
     background: #FAF8FF;
   }
   main .wrapper .introduction .container {
-    margin: 0 5rem;
-    padding: 7rem 9rem 7rem 1rem;
+    margin: 0 auto;
+    padding: 1rem 2rem 1rem 1rem;
     background: #fff;
     border: 1px #161616 solid;
     border-radius: 15px;
     box-shadow: 10px 10px #161616;
   }
+  main .wrapper .introduction .container h1 {
+    font-family: "garamond-premier-pro-caption", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+  }
   main .wrapper .introduction .container h1 .little-txt {
     font-size: 1.5rem;
   }
   main .wrapper .introduction .container button {
-    margin: 1.5rem 0;
-    padding: 1rem;
+    width: 200px;
+    margin: 1.5rem 1.5rem 1.5rem 0;
+    padding: 1rem 0;
     font-size: 1rem;
     font-weight: bold;
     background-color: #8685EF;
     color: #fff;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     border: none;
-    border-radius: 15px;
   }
   main .wrapper .profile-image {
     width: 50%;
@@ -202,9 +225,17 @@ main .wrapper {
     position: relative;
   }
 }
+@media (min-width: 968px) and (min-width: 1200px) {
+  main .wrapper .introduction .container {
+    padding: 1rem 7rem 1rem 1rem;
+  }
+}
 footer {
   background: #FAF8FF;
   color: #8685EF;
+  font-family: "gill-sans-nova", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 @media (min-width: 700px) {
   footer {

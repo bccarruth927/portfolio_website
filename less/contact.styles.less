@@ -3,6 +3,9 @@
 @primary-neutral: #FAF8FF;
 @primary-action: #8685EF;
 
+//Imported Adobe fonts
+@import url("https://use.typekit.net/ttp7aye.css");
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
@@ -25,6 +28,9 @@ header {
     //height: 8.35%;
     //border: 1px red solid;
     //z-index: 1;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 
     @media (min-width: 700px) {
         height: 8.5%;
@@ -34,7 +40,7 @@ header {
     //Tutorial for responsive navigation menu
     //https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535
     nav {
-        background: @primary-neutral;
+        background: @primary-action;
         padding: 0 1rem;
         z-index: 1;
 
@@ -45,7 +51,7 @@ header {
     }
 
     a {
-        color: @primary-action;
+        color: #fff;
         text-decoration: none;
 
         @media (min-width: 700px) {
@@ -79,6 +85,9 @@ header {
     .logo {
         font-size: 1.25rem;
         padding: 0.5rem 10px 0.5rem 0px;
+        font-family: "garamond-premier-pro-caption", serif;
+        font-weight: 700;
+        font-style: normal;
 
         //Desktop styling
         @media (min-width: 700px) {
@@ -171,11 +180,17 @@ main {
 
             h1 {
                 margin-bottom: 0.75rem;
+                font-family: "garamond-premier-pro-caption", serif;
+                font-weight: 700;
+                font-style: normal;
             }
 
             p {
                 line-height: 1.6rem;
                 padding: 0 1rem;
+                font-family: "gill-sans-nova", sans-serif;
+                font-weight: 300;
+                font-style: normal;
             }
 
             .contact-socials {
@@ -203,6 +218,9 @@ main {
             form {
                 //margin-top: 1rem;
                 padding: 1rem 0;
+                font-family: "gill-sans-nova", sans-serif;
+                font-weight: 300;
+                font-style: normal;
 
                 label {
                     margin: 0.5rem 0;
@@ -250,9 +268,12 @@ main {
 footer {
     //height: 10%;
     //border: 1px green solid;
-    background: @primary-neutral;
-    color: @primary-action;
+    background: @primary-action;
+    color: @primary-neutral;
     //z-index: 1;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 
     @media (min-width: 700px) {
         width: 100%;
@@ -278,7 +299,7 @@ footer {
         a {
             padding: 0 0.5rem;
             text-decoration: none;
-            color: @primary-action;
+            color: @primary-neutral;
 
             @media (min-width: 700px) {
                 color: #fff;
