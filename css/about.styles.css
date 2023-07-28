@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/ttp7aye.css");
 *,
 ::before,
 ::after {
@@ -18,9 +19,14 @@ body {
     background-color: #FAF8FF;
   }
 }
+header {
+  font-family: "gill-sans-nova", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 @media (min-width: 700px) {
   header {
-    height: 8.5%;
+    height: 7.5%;
   }
 }
 header nav {
@@ -64,6 +70,9 @@ header .menu li a {
 header .logo {
   font-size: 1.25rem;
   padding: 0.5rem 10px 0.5rem 0px;
+  font-family: "garamond-premier-pro-caption", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 @media (min-width: 700px) {
   header .logo {
@@ -111,9 +120,9 @@ header .button.secondary {
     border: none;
   }
 }
-header .item:not(.button) a:hover,
+header .item a:hover,
 header .item a:hover::after {
-  color: #ccc;
+  text-shadow: 2px 2px 5px #FAF8FF;
 }
 header .item.button {
   order: 2;
@@ -136,6 +145,10 @@ main .mobile section h2 {
   width: 100%;
   text-align: center;
   padding-bottom: 2rem;
+  font-family: "garamond-premier-pro-caption", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
 }
 main .mobile section article {
   padding: 0 1rem 2rem 1rem;
@@ -143,9 +156,15 @@ main .mobile section article {
 }
 main .mobile section article p {
   padding: 0.75rem 0;
+  font-family: "gill-sans-nova", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 main .mobile section article ul {
   padding: 0.5rem 1rem;
+  font-family: "gill-sans-nova", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 @media (min-width: 960px) {
   main .mobile {
@@ -200,6 +219,9 @@ main .wrapper {
     width: 100%;
     padding: 2rem 0;
     text-align: center;
+    font-family: "garamond-premier-pro-caption", serif;
+    font-weight: 700;
+    font-style: normal;
   }
   main .wrapper section article {
     padding: 0 1rem 2rem 1rem;
@@ -207,9 +229,20 @@ main .wrapper {
   }
   main .wrapper section article p {
     padding: 0.75rem 0;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 300;
+    font-style: normal;
   }
   main .wrapper section article ul {
     padding: 0.5rem 1rem;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
+@media (min-width: 968px) {
+  main .wrapper {
+    height: 100%;
   }
 }
 @media (min-width: 960px) {
@@ -220,6 +253,9 @@ main .wrapper {
 footer {
   background: #8685EF;
   color: #FAF8FF;
+  font-family: "gill-sans-nova", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 @media (min-width: 700px) {
   footer {

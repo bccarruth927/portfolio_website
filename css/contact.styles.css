@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/ttp7aye.css");
 *,
 ::before,
 ::after {
@@ -14,13 +15,18 @@ body {
   font-size: 16px;
   background-color: #fff;
 }
+header {
+  font-family: "gill-sans-nova", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 @media (min-width: 700px) {
   header {
     height: 8.5%;
   }
 }
 header nav {
-  background: #FAF8FF;
+  background: #8685EF;
   padding: 0 1rem;
   z-index: 1;
 }
@@ -31,7 +37,7 @@ header nav {
   }
 }
 header a {
-  color: #8685EF;
+  color: #fff;
   text-decoration: none;
 }
 @media (min-width: 700px) {
@@ -61,6 +67,9 @@ header .menu li a {
 header .logo {
   font-size: 1.25rem;
   padding: 0.5rem 10px 0.5rem 0px;
+  font-family: "garamond-premier-pro-caption", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 @media (min-width: 700px) {
   header .logo {
@@ -108,9 +117,9 @@ header .button.secondary {
     border: none;
   }
 }
-header .item:not(.button) a:hover,
+header .item a:hover,
 header .item a:hover::after {
-  color: #ccc;
+  text-shadow: 2px 2px 5px #FAF8FF;
 }
 header .item.button {
   order: 2;
@@ -140,10 +149,16 @@ main .container .intro {
 }
 main .container .intro h1 {
   margin-bottom: 0.75rem;
+  font-family: "garamond-premier-pro-caption", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 main .container .intro p {
   line-height: 1.6rem;
   padding: 0 1rem;
+  font-family: "gill-sans-nova", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 main .container .intro .contact-socials {
   margin-top: 0.5rem;
@@ -156,9 +171,16 @@ main .container .intro .contact-socials a {
 @media (min-width: 968px) {
   main .container .intro {
     width: 50%;
+    height: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (min-width: 968px) {
+  main .container .intro {
+    height: 70vh;
   }
 }
 main .container .form {
@@ -168,6 +190,9 @@ main .container .form {
 }
 main .container .form form {
   padding: 1rem 0;
+  font-family: "gill-sans-nova", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 main .container .form form label {
   margin: 0.5rem 0;
@@ -188,6 +213,10 @@ main .container .form form input[type=submit] {
   border: none;
   background-color: #8685EF;
   color: #fff;
+  cursor: pointer;
+}
+main .container .form form input[type=submit]:hover {
+  box-shadow: 5px 5px 15px #161616;
 }
 @media (min-width: 968px) {
   main .container .form form {
@@ -210,8 +239,11 @@ main .container .form form input[type=submit] {
   }
 }
 footer {
-  background: #FAF8FF;
-  color: #8685EF;
+  background: #8685EF;
+  color: #FAF8FF;
+  font-family: "gill-sans-nova", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 @media (min-width: 700px) {
   footer {
@@ -237,7 +269,7 @@ footer .socials {
 footer .socials a {
   padding: 0 0.5rem;
   text-decoration: none;
-  color: #8685EF;
+  color: #FAF8FF;
 }
 @media (min-width: 700px) {
   footer .socials a {
