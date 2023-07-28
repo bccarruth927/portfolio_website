@@ -141,8 +141,9 @@ header {
         }
     }
 
-    .item:not(.button) a:hover, .item a:hover::after {
-        color: #ccc;
+    .item/*:not(.button)*/ a:hover, .item a:hover::after {
+        //color: #ccc;
+        text-shadow: 2px 2px 5px @primary-neutral;
     }
 
     .item.button {
@@ -204,9 +205,15 @@ main {
 
             @media (min-width: 968px) {
                 width: 50%;
+                height: 100%;
+                margin: 0 auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+            }
+
+            @media (min-width: 968px) {
+                height: 70vh;
             }
         }
 
@@ -241,6 +248,11 @@ main {
                     border: none;
                     background-color: @primary-action;
                     color: #fff;
+                    cursor: pointer;
+                }
+
+                input[type=submit]:hover {
+                    box-shadow: 5px 5px 15px @primary-shade;
                 }
 
                 @media(min-width: 968px) {

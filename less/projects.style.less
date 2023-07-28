@@ -139,8 +139,9 @@ header {
         }
     }
 
-    .item:not(.button) a:hover, .item a:hover::after {
-        color: #ccc;
+    .item/*:not(.button)*/ a:hover, .item a:hover::after {
+        //color: #ccc;
+        text-shadow: 2px 2px 5px @primary-neutral;
     }
 
     .item.button {
@@ -260,6 +261,7 @@ main {
     .desktop-wrapper {
         display: none;
         width: 100%;
+        padding-bottom: 3rem;
         background-color: @primary-neutral;
 
         .intro {
@@ -287,6 +289,7 @@ main {
         .desktop-container {
             margin: 2rem 0;
             width: 95%;
+            max-width: 1400px;
             height: 250px;
             display: flex;
             background-color: #fff;

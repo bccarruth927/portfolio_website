@@ -31,7 +31,7 @@ header {
     font-style: normal;
 
     @media (min-width: 700px) {
-        height: 8.5%;
+        height: 7.5%;
     }
 
     //Main navigation styling
@@ -82,6 +82,7 @@ header {
 
     .logo {
         font-size: 1.25rem;
+        padding: 0.5rem 10px 0.5rem 0px;
         font-family: "garamond-premier-pro-caption", serif;
         font-weight: 700;
         font-style: normal;
@@ -140,8 +141,9 @@ header {
         }
     }
 
-    .item:not(.button) a:hover, .item a:hover::after {
-        color: #ccc;
+    .item/*:not(.button)*/ a:hover, .item a:hover::after {
+        //color: #ccc;
+        text-shadow: 2px 2px 5px @primary-neutral;
     }
 
     .item.button {
@@ -157,7 +159,7 @@ header {
 
 //Main section styling
 main {
-    height: 81.65%;
+    height: 85%;
     //border: 1px blue solid;
 
     .hero-image {
@@ -253,7 +255,12 @@ main {
                         font-weight: 700;
                         font-style: normal;
                         border: none;
+                        cursor: pointer;
                         //border-radius: 15px;
+                    }
+
+                    button:hover {
+                        box-shadow: 5px 5px 15px @primary-shade;
                     }
 
                     @media (min-width: 1200px) {

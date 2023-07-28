@@ -115,9 +115,9 @@ header .button.secondary {
     border: none;
   }
 }
-header .item:not(.button) a:hover,
+header .item a:hover,
 header .item a:hover::after {
-  color: #ccc;
+  text-shadow: 2px 2px 5px #FAF8FF;
 }
 header .item.button {
   order: 2;
@@ -218,6 +218,7 @@ main .wrapper .container .mobile-article p {
 main .desktop-wrapper {
   display: none;
   width: 100%;
+  padding-bottom: 3rem;
   background-color: #FAF8FF;
 }
 main .desktop-wrapper .intro {
@@ -242,6 +243,7 @@ main .desktop-wrapper .intro p {
 main .desktop-wrapper .desktop-container {
   margin: 2rem 0;
   width: 95%;
+  max-width: 1400px;
   height: 250px;
   display: flex;
   background-color: #fff;

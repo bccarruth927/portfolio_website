@@ -21,7 +21,7 @@ header {
 }
 @media (min-width: 700px) {
   header {
-    height: 8.5%;
+    height: 7.5%;
   }
 }
 header nav {
@@ -64,6 +64,7 @@ header .menu li a {
 }
 header .logo {
   font-size: 1.25rem;
+  padding: 0.5rem 10px 0.5rem 0px;
   font-family: "garamond-premier-pro-caption", serif;
   font-weight: 700;
   font-style: normal;
@@ -114,9 +115,9 @@ header .button.secondary {
     border: none;
   }
 }
-header .item:not(.button) a:hover,
+header .item a:hover,
 header .item a:hover::after {
-  color: #ccc;
+  text-shadow: 2px 2px 5px #FAF8FF;
 }
 header .item.button {
   order: 2;
@@ -125,7 +126,7 @@ header .active .item {
   display: block;
 }
 main {
-  height: 81.65%;
+  height: 85%;
 }
 main .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../imgs/hero_img_main.jpg");
@@ -214,6 +215,10 @@ main .wrapper {
     font-weight: 700;
     font-style: normal;
     border: none;
+    cursor: pointer;
+  }
+  main .wrapper .introduction .container button:hover {
+    box-shadow: 5px 5px 15px #161616;
   }
   main .wrapper .profile-image {
     width: 50%;

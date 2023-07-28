@@ -26,7 +26,7 @@ header {
 }
 @media (min-width: 700px) {
   header {
-    height: 8.5%;
+    height: 7.5%;
   }
 }
 header nav {
@@ -120,9 +120,9 @@ header .button.secondary {
     border: none;
   }
 }
-header .item:not(.button) a:hover,
+header .item a:hover,
 header .item a:hover::after {
-  color: #ccc;
+  text-shadow: 2px 2px 5px #FAF8FF;
 }
 header .item.button {
   order: 2;
@@ -235,6 +235,14 @@ main .wrapper {
   }
   main .wrapper section article ul {
     padding: 0.5rem 1rem;
+    font-family: "gill-sans-nova", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
+@media (min-width: 968px) {
+  main .wrapper {
+    height: 100%;
   }
 }
 @media (min-width: 960px) {

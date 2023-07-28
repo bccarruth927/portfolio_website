@@ -29,13 +29,13 @@ body {
 //Header section styling
 header {
     //height: 8.35%;
-    //border: 1px red solid;
+    //border: 1px blue solid;
     font-family: "gill-sans-nova", sans-serif;
     font-weight: 300;
     font-style: normal;
 
     @media (min-width: 700px) {
-        height: 8.5%;
+        height: 7.5%;
     }
 
     //Main navigation styling
@@ -143,8 +143,9 @@ header {
         }
     }
 
-    .item:not(.button) a:hover, .item a:hover::after {
-        color: #ccc;
+    .item/*:not(.button)*/ a:hover, .item a:hover::after {
+        //color: #ccc;
+        text-shadow: 2px 2px 5px @primary-neutral;
     }
 
     .item.button {
@@ -160,6 +161,7 @@ header {
 //Main section styling
 main {
     //height: 100%;
+    //border: 1px solid red;
 
     .mobile {
         section {
@@ -281,9 +283,16 @@ main {
 
                     ul {
                         padding: 0.5rem 1rem;
+                        font-family: "gill-sans-nova", sans-serif;
+                        font-weight: 300;
+                        font-style: normal;
                     }
                 }
             }
+        }
+
+        @media (min-width: 968px) {
+            height: 100%;
         }
     }
 
