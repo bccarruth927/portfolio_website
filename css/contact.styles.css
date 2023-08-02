@@ -19,6 +19,11 @@ header {
   font-family: "gill-sans-nova", sans-serif;
   font-weight: 300;
   font-style: normal;
+  /*
+    .active .item {
+        display: block;
+    }
+    */
 }
 @media (min-width: 700px) {
   header {
@@ -123,9 +128,6 @@ header .item a:hover::after {
 }
 header .item.button {
   order: 2;
-}
-header .active .item {
-  display: block;
 }
 main {
   width: 100%;
