@@ -20,6 +20,10 @@ $(document).ready(() => {
         $('#mobile-project5-container').addClass('animate__animated animate__fadeInUp');
     }, {offset: '80%'});
 
+    $('#mobile-project6-container').waypoint(() => {
+        $('#mobile-project6-container').addClass('animate__animated animate__fadeInUp');
+    }, {offset: '80%'});
+
     /*
     const reveal = () => {
         const $reveals = $('.reveal');
@@ -61,5 +65,9 @@ $(document).ready(() => {
 
     $('#desktop-project5-container').waypoint(() => {
         $('#desktop-project5-container').addClass('animate__animated animate__fadeInLeft');
+    }, {offset: '80%'});
+
+    $('#desktop-project6-container').waypoint(() => {
+        $('#desktop-project6-container').addClass('animate__animated animate__fadeInRight');
     }, {offset: '80%'});
 });
