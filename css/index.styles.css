@@ -15,136 +15,42 @@ body {
   font-size: 16px;
 }
 header {
-  font-family: "gill-sans-nova", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  /*
-    .active .item {
-        display: block;
-    }
-    */
-}
-@media (min-width: 700px) {
-  header {
-    height: 7.5%;
-  }
-}
-header nav {
-  background: #FAF8FF;
-  padding: 0 1rem;
-}
-@media (min-width: 700px) {
-  header nav {
-    background: #8685EF;
-    color: #fff;
-  }
-}
-header a {
-  color: #8685EF;
-  text-decoration: none;
-}
-@media (min-width: 700px) {
-  header a {
-    color: #fff;
-  }
-}
-header .menu {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-header .menu li a {
-  display: block;
-  padding: 15px 5px;
-}
-@media (min-width: 700px) {
-  header .menu {
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    background: none;
-  }
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 header .logo {
+  padding: 0.5rem 10px 0.5rem 10px;
   font-size: 1.25rem;
-  padding: 0.5rem 10px 0.5rem 0px;
   font-family: "garamond-premier-pro-caption", serif;
   font-weight: 700;
   font-style: normal;
+  color: #FAF8FF;
 }
 @media (min-width: 700px) {
   header .logo {
-    order: 0;
-    flex: 1;
+    font-size: 1.75rem;
   }
-}
-header .toggle {
-  order: 1;
-  font-size: 1.25rem;
-}
-@media (min-width: 700px) {
-  header .toggle {
-    display: none;
-  }
-}
-header .item {
-  padding: 10px;
-  order: 3;
-  width: 100%;
-  text-align: center;
-  display: none;
-}
-@media (min-width: 700px) {
-  header .item {
-    order: 1;
-    position: relative;
-    display: block;
-    width: auto;
-  }
-}
-header .button {
-  padding: 9px 5px;
-}
-@media (min-width: 700px) {
-  header .button {
-    order: 2;
-  }
-}
-header .button.secondary {
-  border-bottom: 1px #444 solid;
-}
-@media (min-width: 700px) {
-  header .button.secondary {
-    border: none;
-  }
-}
-header .item a:hover,
-header .item a:hover::after {
-  text-shadow: 2px 2px 5px #FAF8FF;
-}
-header .item.button {
-  order: 2;
 }
 main {
-  height: 85%;
+  height: 100%;
 }
 main .hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../imgs/hero_img_main.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
   height: 100%;
-  position: relative;
-  z-index: -1;
+  text-align: center;
 }
 main .hero-image .hero-txt {
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
 }
 main .hero-image .hero-txt h1 {
@@ -153,88 +59,37 @@ main .hero-image .hero-txt h1 {
   font-style: normal;
   font-size: 2rem;
 }
+@media (min-width: 700px) {
+  main .hero-image .hero-txt h1 {
+    font-size: 3rem;
+  }
+}
 main .hero-image .hero-txt h1 .little-txt {
   font-size: 1.5rem;
 }
-main .hero-image .hero-txt button {
-  margin: 1.5rem 0;
+@media (min-width: 700px) {
+  main .hero-image .hero-txt h1 .little-txt {
+    font-size: 2rem;
+  }
+}
+main .hero-image .hero-txt a {
+  display: block;
+  width: 70%;
+  margin: 2rem auto;
   padding: 1rem;
   font-size: 1rem;
-  font-weight: bold;
+  font-family: "garamond-premier-pro-caption", serif;
+  font-weight: 700;
+  font-style: normal;
   background-color: #8685EF;
   color: #fff;
+  text-decoration: none;
   border: none;
   border-radius: 15px;
 }
-@media (min-width: 968px) {
-  main .hero-image {
-    display: none;
-  }
-}
-main .wrapper {
-  display: none;
-}
-@media (min-width: 968px) {
-  main .wrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  main .wrapper .introduction {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    background: #FAF8FF;
-  }
-  main .wrapper .introduction .container {
-    margin: 0 auto;
-    padding: 1rem 2rem 1rem 1rem;
-    background: #fff;
-    border: 1px #161616 solid;
-    border-radius: 15px;
-    box-shadow: 10px 10px #161616;
-  }
-  main .wrapper .introduction .container h1 {
-    font-family: "garamond-premier-pro-caption", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 2.5rem;
-  }
-  main .wrapper .introduction .container h1 .little-txt {
+@media (min-width: 700px) {
+  main .hero-image .hero-txt a {
     font-size: 1.5rem;
-  }
-  main .wrapper .introduction .container button {
-    width: 200px;
-    margin: 1.5rem 1.5rem 1.5rem 0;
-    padding: 1rem 0;
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: #8685EF;
-    color: #fff;
-    font-family: "gill-sans-nova", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    border: none;
-    cursor: pointer;
-  }
-  main .wrapper .introduction .container button:hover {
-    box-shadow: 5px 5px 15px #161616;
-  }
-  main .wrapper .profile-image {
-    width: 50%;
-    height: 100%;
-    background-image: url("../imgs/hero_img_main.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-}
-@media (min-width: 968px) and (min-width: 1200px) {
-  main .wrapper .introduction .container {
-    padding: 1rem 7rem 1rem 1rem;
   }
 }
 footer {
