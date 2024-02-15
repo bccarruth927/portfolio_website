@@ -21,23 +21,12 @@
 <body>
     <header>
         <!--The main header with navigation menu and logo-->
-        <nav>
-            <ul class="menu">
-                <li class="logo"><a href="#">Brenden Carruth</a></li>
-                <li class="item"><a href="../index.html">Home</a></li>
-                <li class="item"><a href="./about.html">About</a></li>
-                <li class="item"><a href="./projects.html">Projects</a></li>
-                <li class="item"><a href="./contact.html">Contact</a></li>
-                <li class="item button secondary"><a target="_blank" href="../pdf/Resume.pdf">Resume</a></li>
-                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
-            </ul>
-        </nav>
+        <h3 class="logo">Brenden Carruth</h3>
     </header>
 
     <main>
 
-        <!--Content for mobile devices-->
-        <div class="wrapper" aria-label="mobile-projects-layout">
+        <div class="wrapper">
             <div class="intro">
                 <h1>My Latest Projects</h1>
                 <p>
@@ -45,13 +34,23 @@
                     utilizing the links to my GitHub profile to see how the code is all put together!
                 </p>
             </div>
-            <div class="container" id="mobile-project1-container">
+
+            <div class="container slide-right">
+                <!--Mobile image and title layout-->
                 <div id="project1">
                     <div class="hero-txt">
                         <h3>Concrete Calculator</h3>
                     </div>
                 </div>
+                <!--Tablet/desktop image layout-->
+                <div class="left-image">
+                    <figure>
+                        <img src="../imgs/project1.jpg" alt="image of project one - concrete calculator">
+                    </figure>
+                </div>
                 <article class="mobile-article">
+                    <!--Tablet/desktop title-->
+                    <h3>Concrete Calculator</h3>
                     <p>
                         This is one of my favorite projects that I have worked on to date! It is a web application consisting
                         of calculators designed to calculate the cubic yardage of concrete based on user provided data. This project
@@ -62,13 +61,23 @@
                     </p>
                 </article>
             </div>
-            <div class="container top-spacing" id="mobile-project2-container">
+
+            <div class="container slide-left top-spacing">
+                <!--Mobile image and title layout-->
                 <div id="project2">
                     <div class="hero-txt">
                         <h3>Photo Gallery</h3>
                     </div>
                 </div>
+                <!--Tablet/desktop image layout-->
+                <div class="left-image">
+                    <figure>
+                        <img src="../imgs/project2.jpg" alt="image of project 2 - animal photo gallery">
+                    </figure>
+                </div>
                 <article class="mobile-article">
+                    <!--Tablet/desktop title-->
+                    <h3>Photo Gallery</h3>
                     <p>
                         I built this project to help myself better understand and practice the React.js JavaScript library. Given it is
                         one of the most popular JavaScript libraries in use today I wanted to have it as a part of my skill set. I was able
@@ -79,29 +88,46 @@
                     </p>
                 </article>
             </div>
-            <div class="container top-spacing" id="mobile-project3-container">
+
+            <div class="container slide-right top-spacing">
+                <!--Mobile image and title layout-->
                 <div id="project3">
                     <div class="hero-txt">
-                        <h3>Ticket Purchase</h3>
+                        <h3>C++ Projects</h3>
                     </div>
                 </div>
+                <!--Tablet/desktop image layout-->
+                <div class="left-image">
+                    <figure>
+                        <img src="../imgs/project3.jpg" alt="image of project 3 - code of a project built in C++">
+                    </figure>
+                </div>
                 <article class="mobile-article">
+                    <h3>C++ Projects</h3>
                     <p>
-                        This is a project I built as a part of my course <i>Fundamentals of JavaScript</i> at the University of Maryland Global Campus.
-                        The premise of the project was to help me learn and understand some of the basic fundamentals of JavaScript such as the use of
-                        variables, functions and conditionals. I wanted to include this project in my portfolio to demonstrate I have a firm understanding
-                        of one of the most widely used programming languages in the world!<br>
-                        To view the GitHub repository please <a href="https://github.com/bccarruth927/ticket_purchase" target="_blank">Click Here!</a>
+                        This repository is a collection of a series of projects I have either built or are building using the C++ programming
+                        language. My skills are consistently developing so the purpose of this repository is to showcase my current skills and
+                        allow me opportunities to practice.
+                        To view the GitHub repository please <a href="#" target="_blank">Click Here!</a>
                     </p>
                 </article>
             </div>
-            <div class="container top-spacing" id="mobile-project4-container">
+
+            <div class="container slide-left top-spacing">
+                <!--Mobile image and title layout-->
                 <div id="project4">
                     <div class="hero-txt">
                         <h3>Portfolio Website</h3>
                     </div>
                 </div>
+                <!--Tablet/desktop image layout-->
+                <div class="left-image">
+                    <figure>
+                        <img src="../imgs/project4.jpg" alt="image of project 4 - the homepage of this website">
+                    </figure>
+                </div>
                 <article class="mobile-article">
+                    <h3>Portfolio Website</h3>
                     <p>
                         You didn't think I'd not incorporate my own ePortfolio website in my list of projects did you? Of course you didn't! My ePortfolio
                         I felt was important to include because it encapsulates not only all that I've learned but all my skills prominently on display in one
@@ -110,152 +136,6 @@
                         To view the GitHub repository please <a href="https://github.com/bccarruth927/portfolio_website" target="_blank">Click Here!</a>
                     </p>
                 </article>
-            </div>
-            <div class="container top-spacing" id="mobile-project5-container">
-                <div id="project5">
-                    <div class="hero-txt">
-                        <h3>Carruth Website</h3>
-                    </div>
-                </div>
-                <article class="mobile-article">
-                    <p>
-                        This is the website I am building for my family's construction business! It is a work in progress and far from what I would describe
-                        as complete. Taking what I have learned through my coursework at University of Maryland Global Campus as well as the extra skill development
-                        from the online bootcamps I have been taking I am more than confident in my abilities to create a website that will service our company's demands.<br>
-                        To view the GitHub repository please <a href="https://github.com/bccarruth927/carruth_website" target="_blank">Click Here!</a>
-                    </p>
-                </article>
-            </div>
-            <div class="container top-spacing" id="mobile-project6-container">
-                <div id="project6">
-                    <div class="hero-txt">
-                        <h3>Excursion Project</h3>
-                    </div>
-                </div>
-                <article class="mobile-article">
-                    <p>
-                        This is a project that I built utilizing the resources provided from the online coding training platform <strong>Codecademy</strong> as a part
-                        of their course on <i>Git & GitHub</i>. Included this project on my portfolio because it highlights not just my ability to utilize front-end
-                        programming languages like HTML5 and CSS but also the good coding practices like the use of semantic tags in the HTML. I also feel it demonstrates
-                        my ability to work as a part of team by constructing projects utilizing layouts and guidelines provided by UI & UX designers.<br>
-                        To view the GitHub repository please <a href="https://github.com/bccarruth927/excursion_project" target="_blank">Click Here!</a>
-                    </p>
-                </article>
-            </div>
-        </div>
-
-        <!--Content for desktop/tablet devices-->
-        <div class="desktop-wrapper" aria-label="desktop-projects-layout">
-            <div class="intro">
-                <h1>My Latest Projects</h1>
-                <p>
-                    Here you'll find a collection of my latest projects. A brief description of each is provided but I encourage
-                    utilizing the links to my GitHub profile to see how the code is all put together! Scroll through the page to
-                    see the projects!
-                </p>
-            </div>
-            <div class="desktop-container right-shadow" id="desktop-project1-container">
-                <figure class="left-image" id="desktop-project1">
-                    <img src="../imgs/project1.jpg" alt="concrete calculator project">
-                </figure>
-                <article class="desktop-article">
-                    <div>
-                        <h3>Concrete Calculator</h3>
-                        <p>
-                            This is one of my favorite projects that I have worked on to date! It is a web application consisting
-                            of calculators designed to calculate the cubic yardage of concrete based on user provided data. This project
-                            enabled me to practice JavaScript which was one of the languages I wanted to learn the most but originally
-                            found the most challenging.<br>
-                            To view the GitHub repository please <a href="https://github.com/bccarruth927/concrete_calculator" target="_blank">Click Here!</a><br>
-                            To view the published GitHub page please <a href="https://bccarruth927.github.io/concrete_calculator/" target="_blank">Click Here!</a>
-
-                        </p>
-                    </div>
-                </article>
-            </div>
-            <div class="desktop-container left-shadow" id="desktop-project2-container">
-                <article class="desktop-article">
-                    <div>
-                        <h3>Photo Gallery</h3>
-                        <p>
-                            I built this project to help myself better understand and practice the React.js JavaScript library. Given it is
-                            one of the most popular JavaScript libraries in use today I wanted to have it as a part of my skill set. I was able
-                            to practice many aspects of the library including using JSX, making and connecting components and the use of hooks to
-                            change the DOM instead of directly altering it.<br>
-                            To view the GitHub repository please <a href="https://github.com/bccarruth927/photo_gallery_react.js" target="_blank">Click Here!</a>
-                        </p>
-                    </div>
-                </article>
-                <figure class="right-image" id="desktop-project2">
-                    <img src="../imgs/project2.jpg" alt="photo gallery project">
-                </figure>
-            </div>
-            <div class="desktop-container right-shadow" id="desktop-project3-container">
-                <figure class="left-image" id="desktop-project3">
-                    <img src="../imgs/project3.jpg" alt="ticket purchase project">
-                </figure>
-                <article class="desktop-article">
-                    <div>
-                        <h3>Ticket Purchase</h3>
-                        <p>
-                            This is a project I built as a part of my course <i>Fundamentals of JavaScript</i> at the University of Maryland Global Campus.
-                            The premise of the project was to help me learn and understand some of the basic fundamentals of JavaScript such as the use of
-                            variables, functions and conditionals. I wanted to include this project in my portfolio to demonstrate I have a firm understanding
-                            of one of the most widely used programming languages in the world!<br>
-                            To view the GitHub repository please <a href="https://github.com/bccarruth927/ticket_purchase" target="_blank">Click Here!</a>
-                        </p>
-                    </div>
-                </article>
-            </div>
-            <div class="desktop-container left-shadow" id="desktop-project4-container">
-                <article class="desktop-article">
-                    <div>
-                        <h3>Portfolio Website</h3>
-                        <p>
-                            You didn't think I'd not incorporate my own ePortfolio website in my list of projects did you? Of course you didn't! My ePortfolio
-                            I felt was important to include because it encapsulates not only all that I've learned but all my skills prominently on display in one
-                            place. I'm quite proud of how well it turned out! Additionally since this is my own personal portfolio I can experiment with different
-                            features and also have an archive which I can reference if I want to replicate similar designs or effects on future projects!<br>
-                            To view the GitHub repository please <a href="https://github.com/bccarruth927/portfolio_website" target="_blank">Click Here!</a>
-                        </p>
-                    </div>
-                </article>
-                <figure class="right-image" id="desktop-project4">
-                    <img src="../imgs/project4.jpg" alt="portfolio website project">
-                </figure>
-            </div>
-            <div class="desktop-container right-shadow" id="desktop-project5-container">
-                <figure class="left-image" id="desktop-project5">
-                    <img src="../imgs/project5.jpg" alt="carruth website project">
-                </figure>
-                <article class="desktop-article">
-                    <div>
-                        <h3>Carruth Website</h3>
-                        <p>
-                            This is the website I am building for my family's construction business! It is a work in progress and far from what I would describe
-                            as complete. Taking what I have learned through my coursework at University of Maryland Global Campus as well as the extra skill development
-                            from the online bootcamps I have been taking I am more than confident in my abilities to create a website that will service our company's demands.<br>
-                            To view the GitHub repository please <a href="https://github.com/bccarruth927/carruth_website" target="_blank">Click Here!</a>
-                        </p>
-                    </div>
-                </article>
-            </div>
-            <div class="desktop-container left-shadow" id="desktop-project6-container">
-                <article class="desktop-article">
-                    <div>
-                        <h3>Excursion Project</h3>
-                        <p>
-                            This is a project that I built utilizing the resources provided from the online coding training platform <strong>Codecademy</strong> as a part
-                        of their course on <i>Git & GitHub</i>. Included this project on my portfolio because it highlights not just my ability to utilize front-end
-                        programming languages like HTML5 and CSS but also the good coding practices like the use of semantic tags in the HTML. I also feel it demonstrates
-                        my ability to work as a part of team by constructing projects utilizing layouts and guidelines provided by UI & UX designers.<br>
-                        To view the GitHub repository please <a href="https://github.com/bccarruth927/excursion_project" target="_blank">Click Here!</a>
-                        </p>
-                    </div>
-                </article>
-                <figure class="right-image" id="desktop-project6">
-                    <img src="../imgs/project6.jpg" alt="excursion project">
-                </figure>
             </div>
         </div>
     </main>

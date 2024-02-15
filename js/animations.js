@@ -1,5 +1,6 @@
 $(document).ready(() => {
     //Scroll animation for the mobile Projects layout
+    /*
     $('#mobile-project1-container').waypoint(() => {
         $('#mobile-project1-container').addClass('animate__animated animate__fadeInUp');
     }, {offset: '50%'});
@@ -23,6 +24,7 @@ $(document).ready(() => {
     $('#mobile-project6-container').waypoint(() => {
         $('#mobile-project6-container').addClass('animate__animated animate__fadeInUp');
     }, {offset: '80%'});
+    */
 
     /*
     const reveal = () => {
@@ -47,27 +49,11 @@ $(document).ready(() => {
     */
 
     //Scroll animation for the desktop Projects layout
-    $('#desktop-project1-container').waypoint(() => {
-        $('#desktop-project1-container').addClass('animate__animated animate__fadeInLeft');
+    $('.slide-right').waypoint(() => {
+        $('.slide-right').addClass('animate__animated animate__fadeInLeft');
     }, {offset: '50%'});
 
-    $('#desktop-project2-container').waypoint(() => {
-        $('#desktop-project2-container').addClass('animate__animated animate__fadeInRight');
-    }, {offset: '80%'});
-
-    $('#desktop-project3-container').waypoint(() => {
-        $('#desktop-project3-container').addClass('animate__animated animate__fadeInLeft');
-    }, {offset: '80%'});
-
-    $('#desktop-project4-container').waypoint(() => {
-        $('#desktop-project4-container').addClass('animate__animated animate__fadeInRight');
-    }, {offset: '80%'});
-
-    $('#desktop-project5-container').waypoint(() => {
-        $('#desktop-project5-container').addClass('animate__animated animate__fadeInLeft');
-    }, {offset: '80%'});
-
-    $('#desktop-project6-container').waypoint(() => {
-        $('#desktop-project6-container').addClass('animate__animated animate__fadeInRight');
+    $('.slide-left').waypoint(() => {
+        $('.slide-left').addClass('animate__animated animate__fadeInRight');
     }, {offset: '80%'});
 });
