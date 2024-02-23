@@ -46,7 +46,7 @@ header {
 
 //Main section styling
 main {
-    height: 100%;
+    //height: 100%;
 
     .hero-image {
         display: flex;
@@ -57,7 +57,7 @@ main {
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 100%;
+        height: 800px;
         text-align: center;
 
         .hero-txt {
@@ -104,12 +104,66 @@ main {
             }
         }
     }
+
+    .about {
+            figure {
+                //height: 100px;
+                display: flex;
+                justify-content: center;
+                padding: 2rem 0;
+                //border: 1px red solid;
+        
+                img {
+                    height: 100px;
+                    width: 100px;
+                    border: 0.5rem @primary-action solid;
+                    border-radius: 50%;
+                }
+            }
+    
+            h2 {
+                width: 100%;
+                text-align: center;
+                padding-bottom: 2rem;
+                font-family: "garamond-premier-pro-caption", serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 2rem;
+            }
+    
+            article {
+                padding: 0 1rem 2rem 1rem;
+                line-height: 1.5rem;
+    
+                p {
+                    padding: 0.75rem 0;
+                    font-family: "gill-sans-nova", sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                }
+    
+                ul {
+                    padding: 0.5rem 1rem;
+                    font-family: "gill-sans-nova", sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                }
+
+                @media (min-width: 700px) {
+                    margin: 1.5rem;
+                }
+            }
+
+        /*
+        @media (min-width: 960px) {
+            display: none;
+        }
+        */
+    }
 }
 
 //Footer section styling
 footer {
-    //height: 10%;
-    //border: 1px green solid;
     background: @primary-neutral;
     color: @primary-action;
     font-family: "gill-sans-nova", sans-serif;
@@ -129,12 +183,10 @@ footer {
         justify-content: center;
         width: 100%;
         padding: 0.75rem 0;
-        //border: 1px pink solid;
 
         @media (min-width: 700px) {
             width: auto;
             padding: 1.5rem 1rem 1.5rem 0rem;
-            //border: 1px pink solid;
         }
 
         a {
@@ -158,7 +210,6 @@ footer {
             width: auto;
             padding-right: 1rem;
             align-items: center;
-            //border: 1px pink solid;
         }
     }
 }
