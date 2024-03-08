@@ -89,13 +89,13 @@ main .hero-image .hero-txt a {
     font-size: 1.5rem;
   }
 }
-/*
 main .about {
+  /*
         @media (min-width: 960px) {
             display: none;
         }
+        */
 }
-*/
 main .about figure {
   display: flex;
   justify-content: center;

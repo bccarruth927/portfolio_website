@@ -49,11 +49,19 @@ $(document).ready(() => {
     */
 
     //Scroll animation for the desktop Projects layout
-    $('.slide-right').waypoint(() => {
-        $('.slide-right').addClass('animate__animated animate__fadeInLeft');
+    $('#project1').waypoint(() => {
+        $('#project1').addClass('animate__animated animate__fadeInLeft');
     }, {offset: '50%'});
 
-    $('.slide-left').waypoint(() => {
-        $('.slide-left').addClass('animate__animated animate__fadeInRight');
+    $('#project2').waypoint(() => {
+        $('#project2').addClass('animate__animated animate__fadeInRight');
+    }, {offset: '80%'});
+
+    $('#project3').waypoint(() => {
+        $('#project3').addClass('animate__animated animate__fadeInLeft');
+    }, {offset: '80%'});
+
+    $('#project4').waypoint(() => {
+        $('#project4').addClass('animate__animated animate__fadeInRight');
     }, {offset: '80%'});
 });
