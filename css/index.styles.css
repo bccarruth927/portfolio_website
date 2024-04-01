@@ -6,11 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  height: 100%;
-}
 body {
-  height: 100%;
   font-family: sans-serif;
   font-size: 16px;
 }
@@ -32,6 +28,17 @@ header .logo {
 @media (min-width: 700px) {
   header .logo {
     font-size: 1.75rem;
+    max-width: 1290px;
+    margin: 0 auto;
+  }
+}
+main {
+  width: 100%;
+}
+@media (min-width: 700px) {
+  main {
+    max-width: 1290px;
+    margin: 0 auto;
   }
 }
 main .hero-image {
@@ -88,13 +95,6 @@ main .hero-image .hero-txt a {
   main .hero-image .hero-txt a {
     font-size: 1.5rem;
   }
-}
-main .about {
-  /*
-        @media (min-width: 960px) {
-            display: none;
-        }
-        */
 }
 main .about figure {
   display: flex;

@@ -12,12 +12,7 @@
     box-sizing: border-box;
 }
 
-html {
-    height: 100%;
-}
-
 body {
-    height: 100%;
     font-family: sans-serif;
     font-size: 16px;
 }
@@ -40,13 +35,20 @@ header {
 
         @media (min-width: 700px) {
             font-size: 1.75rem;
+            max-width: 1290px;
+            margin: 0 auto;
         }
     }
 }
 
 //Main section styling
 main {
-    //height: 100%;
+    width: 100%;
+
+    @media (min-width: 700px) {
+        max-width: 1290px;
+        margin: 0 auto;
+    }
 
     .hero-image {
         display: flex;
@@ -106,59 +108,53 @@ main {
     }
 
     .about {
-            figure {
-                //height: 100px;
-                display: flex;
-                justify-content: center;
-                padding: 2rem 0;
-                //border: 1px red solid;
+        figure {
+            //height: 100px;
+            display: flex;
+            justify-content: center;
+            padding: 2rem 0;
+            //border: 1px red solid;
         
-                img {
-                    height: 100px;
-                    width: 100px;
-                    border: 0.5rem @primary-action solid;
-                    border-radius: 50%;
-                }
+            img {
+                height: 100px;
+                width: 100px;
+                border: 0.5rem @primary-action solid;
+                border-radius: 50%;
             }
+        }
     
-            h2 {
-                width: 100%;
-                text-align: center;
-                padding-bottom: 2rem;
-                font-family: "garamond-premier-pro-caption", serif;
-                font-weight: 700;
-                font-style: normal;
-                font-size: 2rem;
-            }
+        h2 {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 2rem;
+            font-family: "garamond-premier-pro-caption", serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 2rem;
+        }
     
-            article {
+        article {
                 padding: 0 1rem 2rem 1rem;
                 line-height: 1.5rem;
     
-                p {
-                    padding: 0.75rem 0;
-                    font-family: "gill-sans-nova", sans-serif;
-                    font-weight: 300;
-                    font-style: normal;
-                }
+            p {
+                padding: 0.75rem 0;
+                font-family: "gill-sans-nova", sans-serif;
+                font-weight: 300;
+                font-style: normal;
+            }
     
-                ul {
-                    padding: 0.5rem 1rem;
-                    font-family: "gill-sans-nova", sans-serif;
-                    font-weight: 300;
-                    font-style: normal;
-                }
-
-                @media (min-width: 700px) {
-                    margin: 1.5rem;
-                }
+            ul {
+                padding: 0.5rem 1rem;
+                font-family: "gill-sans-nova", sans-serif;
+                font-weight: 300;
+                font-style: normal;
             }
 
-        /*
-        @media (min-width: 960px) {
-            display: none;
+            @media (min-width: 700px) {
+                margin: 1.5rem;
+            }
         }
-        */
     }
 }
 
