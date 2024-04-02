@@ -115,7 +115,7 @@ main .wrapper .container #project1-mobile-display {
   }
 }
 main .wrapper .container #project2-mobile-display {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../imgs/project2_img.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../imgs/project2_img.png");
   width: 100%;
   height: 225px;
   background-position: center;
@@ -153,6 +153,20 @@ main .wrapper .container #project4-mobile-display {
 }
 @media (min-width: 700px) {
   main .wrapper .container #project4-mobile-display {
+    display: none;
+  }
+}
+main .wrapper .container #project5-mobile-display {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../imgs/project5_img.jpg");
+  width: 100%;
+  height: 225px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+@media (min-width: 700px) {
+  main .wrapper .container #project5-mobile-display {
     display: none;
   }
 }
