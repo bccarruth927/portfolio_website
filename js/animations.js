@@ -64,4 +64,16 @@ $(document).ready(() => {
     $('#project4').waypoint(() => {
         $('#project4').addClass('animate__animated animate__fadeInRight');
     }, {offset: '80%'});
+
+    $('#project5').waypoint(() => {
+        $('#project5').addClass('animate__animated animate__fadeInLeft');
+    }, {offset: '80%'});
+
+    $('#project6').waypoint(() => {
+        $('#project6').addClass('animate__animated animate__fadeInRight');
+    }, {offset: '80%'});
+
+    $('#project7').waypoint(() => {
+        $('#project7').addClass('animate__animated animate__fadeInLeft');
+    }, {offset: '80%'});
 });
